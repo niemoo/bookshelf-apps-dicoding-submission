@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .top-n5 {
+    top: -0.5rem; /* Adjust this value according to your needs */
+  }
+}
+
+* {
+  font-family: Poppins;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10000;
+}
+
+.container {
+  border-radius: 8px;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+  border: rgb(221, 221, 221) 1px solid;
+  padding: 10px 20px 15px 25px;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.books:hover {
+  background-color: rgb(191, 235, 255);
+}
+
+.completed-books:hover {
+  background-color: rgb(228, 255, 230);
+}
+
+.title-container {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.little-container {
+  margin-top: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.right-container {
+  display: flex;
+  gap: 5px;
+}
+
+.author-box {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #c7d1ff;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.author-icon {
+  font-weight: 900;
+  content: '\f5da';
+  font-size: 0.875rem;
+  color: #1e3a8a;
+}
+
+.author-text {
+  font-size: 0.875rem;
+  color: #1e3a8a;
+}
+
+.year-box {
+  /* Year box styles */
+  background-color: #ceffcc; /* bg-yellow-200 */
+  border-radius: 0.25rem; /* rounded */
+  padding: 0.25rem 0.5rem; /* py-1 px-2 */
+}
+
+.year-box p {
+  /* Year text styles */
+  font-size: 0.875rem; /* text-sm */
+  color: #289719; /* text-yellow-900 */
+}
+
+.button {
+  appearance: auto;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0em;
+  padding-block: 1px;
+  padding-inline: 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-image: initial;
+}
+
+.fa-check {
+  font-weight: 900;
+  content: '\f00c';
+  /* Text color green-500 */
+  color: #48bb78;
+  background-color: #ddffeb;
+  /* Hover effect text-white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* Rounded corners */
+  border-radius: 9999px;
+  /* Border green-500 */
+  border: 1px solid #48bb78;
+  /* Hover effect background green-500 */
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.fa-check:hover {
+  color: #ffffff;
+  background-color: #48bb78;
+}
+
+.fa-pen {
+  font-weight: 900;
+  content: '\f00c';
+  /* Text color green-500 */
+  color: #ffd000;
+  background-color: #fff7d4;
+  /* Hover effect text-white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* Rounded corners */
+  border-radius: 9999px;
+  /* Border green-500 */
+  border: 1px solid #ffd000;
+  /* Hover effect background green-500 */
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.fa-pen:hover {
+  color: #ffffff;
+  background-color: #ffd000;
+}
+
+.fa-arrow-rotate-left {
+  font-weight: 900;
+  content: '\f0e2';
+  /* Text color green-500 */
+  color: rgb(0, 153, 255);
+  background-color: rgb(211, 237, 255);
+  /* Hover effect text-white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* Rounded corners */
+  border-radius: 9999px;
+  /* Border green-500 */
+  border: 1px solid rgb(0, 153, 255);
+  /* Hover effect background green-500 */
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.fa-arrow-rotate-left:hover {
+  color: #ffffff;
+  background-color: rgb(0, 153, 255);
+}
+
+.fa-trash-can {
+  font-weight: 900;
+  content: '\f2ed';
+  /* Text color green-500 */
+  color: red;
+  background-color: rgb(255, 221, 221);
+  /* Hover effect text-white */
+  transition: color 0.3s ease;
+  cursor: pointer;
+  /* Rounded corners */
+  border-radius: 9999px;
+  /* Border green-500 */
+  border: 1px solid red;
+  /* Hover effect background green-500 */
+  transition: background-color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.fa-trash-can:hover {
+  color: #ffffff;
+  background-color: red;
+}
